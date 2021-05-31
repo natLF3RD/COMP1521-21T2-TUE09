@@ -6,30 +6,26 @@ int main () {
     
 
     p = &x;         // a
-    // x = 0
-    // p = 1000
-
+    // p=1000
+    
     x = 5;          // b
-    // x = 5 
-    // p = 1000
-    // *p = 5
-
+    // x = 5
+    
     *p = 3;         // c
-    // x = 3
-    // p = 1000
-
+    //p=1000
+    //x=3
+    
     x = (int)p;     // d
-    // x = 1000
-    // p = 1000
+    // x=1000
+    // p is the same
 
     x = (int)&p;    // e
-    // x = 2000
+    // x= 2000
 
     p = NULL;       // f
-    // x unchanged
-    // p == NULL;
+    // p=NULL
 
     *p = 1;         // g
-    // error !
+    // error! cant dereference null ptr.
 
 }
